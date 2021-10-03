@@ -17,7 +17,7 @@ contract CallOfDuty is ERC721URIStorage {
         console.log("This is my NFT contract, more things are coming soon!!");
     }
 
-    function makeCallOfDutyNFT() public {
+    function mintNFT() public {
         //Get the current tokenId, this start at 0
         uint256 newItemId = _tokenIds.current();
 

@@ -7,11 +7,11 @@ const main = async () => {
     console.log("Contract deployed to:", nftContract.address)
 
     //Minting 1st NFT
-    let txn = await nftContract.makeCallOfDutyNFT()
+    let txn = await nftContract.mintNFT()
     await txn.wait()
 
     //Minting 2nd NFT
-    txn = await nftContract.makeCallOfDutyNFT()
+    txn = await nftContract.mintNFT()
     await txn.wait()
   };
   
